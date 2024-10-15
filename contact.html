@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvarna Laxmi Nidhi Header</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="scrip.js">
+</head>
+
+<body>
+    <!-- Info Bar -->
+    <header class="info-header">
+        <nav>
+            <ul>
+                <li>Opening Hours: Monday to Saturday <strong>10:00 am to 06:30 pm</strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html"><img src="Assets/Suvarna-Laxmi-Logo-1024x259.png" alt="Suvarna Laxmi Nidhi Logo"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li>
+                    <a href="#deposit">DEPOSIT <span>&#x25BC;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="fixed-deposite.html">Fixed Deposit</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="saving-accounts.html">Savings Account</a></li>
+                        <li><a href="RECURRING-DEPOSIT.html">Recurring Deposit</a></li>
+                        <li><a href="Daily-Deposite.html">Daily Deposit</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#loan">LOAN <span>&#x25BC;</span></a>
+                    <ul class="dropdown">
+                        <li><a href="Business-loan.html">Business Loan</a></li>
+                        <li><a href="Loan-against-bond.html">Loan against bond</a></li>
+                        <li><a href="GOLD-LOAN.html">Gold Loan</a></li>
+                        <li><a href="Loan-Again-deposit.html">Loan against Deposit</a></li>
+                        <li><a href="Loan-Against-property.html">Loan Against property</a></li>
+                    </ul>
+                </li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="call-now">
+            <a href="tel:+1234567890" class="call-button">CALL NOW</a>
+        </div>
+    </header>
+
+
+
+    <!--Contact form -->
+
+    <div class="container">
+        <h1 class="CompanyInformation">Company Information</h1>
+
+
+
+        <div class="left-side">
+
+            <p>Company Name: Suvarna Laxmi Nidhi Limited</p>
+            <p>Address:
+
+                Sr. No. 106-3A,Shivaji Nagar, Pune 411016</p>
+            <p>Contact: suvarnalaxminidhi@gmail.com</p>
+            <p>Phone: +(123) 456-7890</p>
+            <p>Monday to Saturday 10:00 am to 06:30 pm</p>
+        </div>
+        <div class="right-side">
+
+            <form id="contactForm" onsubmit="handleFormSubmission(event)">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required> <br>
+                <label for="name">Mobile Number*</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="email">Comment or Message*</label>
+                <input type="message" id="message" name="message" required><br>
+
+
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent immediate form submission
+
+            // Display the thank-you message
+            alert("Thank you for submitting the form!");
+
+            // Submit the form after displaying the alert
+            setTimeout(() => {
+                event.target.submit(); // Manually submit the form
+            }, 100); // A slight delay before submitting
+        }
+    </script>
+
+
+
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section follow">
+
+
+                <h4>Head Office</h4>
+                <h5>Suvarna Laxmi Nidhi Limited</h5>
+
+
+                <p>Sr. No. 106-3A, Near Hotel Sahara, S. B. Road, Shivaji Nagar, Pune 411016</p>
+            </div>
+            <div class="footer-section links">
+
+                <ul>
+                    <h4>Deposite</h4>
+                    <li><a href="fixed-deposite.html">Fixed Deposit</a></li>
+                    <li><a href="membership.html">Membership </a></li>
+
+
+                    <li><a href="saving-accounts.html">Savings Account</a></li>
+                    <li><a href="RECURRING-DEPOSIT.html">Recurring Deposit</a></li>
+                    <li><a href="media.html">Daily Deposit</a></li>
+
+                </ul>
+
+
+            </div>
+            <div class="footer-section links">
+
+                <ul>
+                    <h4>Loan</h4>
+                    <li><a href="Business-loan.html">Business Loan</a></li>
+                    <li><a href="Loan-against-bond.html">Loan against bond </a></li>
+
+
+                    <li><a href="GOLD-LOAN.html">Gold Loan</a></li>
+                    <li><a href="Loan-Again-deposit.html">Loan against Deposit</a></li>
+                    <li><a href="Loan-Against-property.html">Loan Against property</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="footer-section contact">
+                <h4>Follow Us </h4>
+                <a href="#" aria-label="Follow us on Facebook">🌐Facebook</a>
+
+                <a href="#" aria-label="Follow us on Instagram">📸Instagram</a>
+                <a href="#" aria-label="Follow us on LinkedIn">🔗Youtube</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Suvarna Laxmi Nidhi Ltd. All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
